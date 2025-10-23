@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.Ghausil Ma'mun - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="about-view-container">
+        <!-- LOADING SCREEN -->
+        <div id="loader-wrapper" class="loader-wrapper">
+            <div class="loader"></div>
+        </div>
+
+        <!-- CUSTOM CURSOR -->
+        <div id="cursor" class="cursor"></div>
+        <div id="cursor-follower" class="cursor-follower"></div>
+
+        <div class="container">
+            <!-- PANEL KIRI -->
+            <aside class="left-panel">
+                <div class="profile-img-wrapper">
+                    <!-- Ganti dengan path gambar Anda -->
+                    <img src="https://picsum.photos/seed/ghausil-profile/600/800.jpg" alt="Foto Profil Anda" class="profile-img" />
+                    <div class="overlay-content">
+                        <h1 id="typed-name"></h1>
+                        <p id="current-tagline" class="role-tagline"></p>
+                    </div>
+                </div>
+                <div class="sidebar-stats">
+                    <div class="stat-item">
+                        <h3 id="years-stat">0+</h3>
+                        <p>Tahun Pengalaman</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 id="projects-stat">0+</h3>
+                        <p>Proyek Selesai</p>
+                    </div>
+                </div>
+                <div class="social-links-sidebar">
+                    <!-- Ganti '#' dengan link Anda -->
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-dribbble"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+                <!-- Ganti href dengan path file CV Anda -->
+                <a href="/path/to/your/cv.pdf" class="download-cv-btn" download>
+                    <i class="fas fa-download"></i> Unduh CV
+                </a>
+            </aside>
+
+            <!-- PANEL KANAN -->
+            <main class="right-panel">
+                <section id="about" class="content-section fade-up">
+                    <h2>Tentang Saya</h2>
+                    <p>
+                        Saya adalah seorang <strong>Web Developer & UI/UX Designer</strong> yang
+                        bersemangat dalam membangun pengalaman digital yang indah, intuitif, dan
+                        fungsional. Dengan latar belakang yang kuat dalam pengembangan web modern dan
+                        desain berpusat pada pengguna, saya berusaha untuk menjembatani kesenjangan
+                        antara estetika dan teknologi.
+                    </p>
+                    <p>
+                        Setiap baris kode dan setiap piksel desain adalah kesempatan bagi saya untuk
+                        memecahkan masalah dan menciptakan sesuatu yang berarti. Filosofi saya
+                        sederhana: desain yang hebat tidak hanya terlihat baik, tetapi juga terasa
+                        baik dan berfungsi dengan sempurna.
+                    </p>
+                    <div class="philosophy-box">
+                        <h3>Filosofi Saya</h3>
+                        <ul>
+                            <li>
+                                <i class="fas fa-check"></i> <strong>Minimalisme:</strong> Kesederhanaan
+                                adalah kunci dari kecanggihan.
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <strong>Keterpusatan Pengguna:</strong> Pengguna adalah alasan mengapa
+                                kita membangun.
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <strong>Kualitas Atas Kuantitas:</strong> Fokus pada detail yang
+                                menghasilkan dampak besar.
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="services" class="content-section fade-left">
+                    <h2>Layanan Saya</h2>
+                    <div id="services-grid" class="services-grid">
+                        <!-- Konten akan diisi oleh JavaScript -->
+                    </div>
+                </section>
+
+                <section id="skills" class="content-section fade-right">
+                    <h2>Keahlian</h2>
+                    <div class="skills-content">
+                        <div class="skill-bars">
+                            <div id="skills-container">
+                                <!-- Konten akan diisi oleh JavaScript -->
+                            </div>
+                        </div>
+                        <div class="tools-section">
+                            <h3>Alat & Teknologi</h3>
+                            <div id="tools-grid" class="tools-grid">
+                                <!-- Konten akan diisi oleh JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="experience" class="content-section fade-left">
+                    <h2>Riwayat Pendidikan</h2>
+                    <div id="timeline" class="timeline">
+                        <!-- Konten akan diisi oleh JavaScript -->
+                    </div>
+                </section>
+
+                <section id="portfolio" class="content-section fade-right">
+                    <h2>Portfolio</h2>
+                    <div id="portfolio-filters" class="portfolio-filters">
+                        <!-- Konten akan diisi oleh JavaScript -->
+                    </div>
+                    <div id="portfolio-grid" class="portfolio-grid">
+                        <!-- Konten akan diisi oleh JavaScript -->
+                    </div>
+                </section>
+
+                <section id="testimonials" class="content-section fade-left">
+                    <h2>Apa Kata Mereka</h2>
+                    <div class="testimonial-slider">
+                        <div id="testimonial-wrapper" class="testimonial-wrapper">
+                            <!-- Konten akan diisi oleh JavaScript -->
+                        </div>
+                    </div>
+                    <div id="slider-dots" class="slider-dots">
+                        <!-- Konten akan diisi oleh JavaScript -->
+                    </div>
+                </section>
+
+                <section id="hobbies" class="content-section fade-up">
+                    <h2>Di Luar Kode</h2>
+                    <p>
+                        Ketika saya tidak sedang di depan layar, Anda bisa menemukan saya yang
+                        sedang...
+                    </p>
+                    <div id="hobbies-grid" class="hobbies-grid">
+                        <!-- Konten akan diisi oleh JavaScript -->
+                    </div>
+                </section>
+
+                <section id="final-cta" class="content-section fade-up">
+                    <div class="cta-box">
+                        <h2>Siap untuk Berkolaborasi?</h2>
+                        <p>
+                            Saya selalu terbuka untuk diskusi tentang proyek baru, ide kreatif, atau
+                            peluang untuk menjadi bagian dari visi Anda.
+                        </p>
+                        <!-- Ganti href dengan link kontak Anda -->
+                        <a href="/contact" class="cta-button">Hubungi Saya</a>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
