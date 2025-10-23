@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - M.Ghausil Ma'mun</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <div class="contact-view-container">
+        <!-- LOADING SCREEN -->
+        <div id="loader-wrapper" class="loader-wrapper">
+            <div class="loader"></div>
+        </div>
+
+        <!-- CUSTOM CURSOR -->
+        <div id="cursor" class="cursor"></div>
+        <div id="cursor-follower" class="cursor-follower"></div>
+
+        <main class="contact-main-content">
+            <!-- HERO SECTION -->
+            <section class="hero-section fade-down">
+                <div class="hero-bg-pattern"></div>
+                <div class="hero-content">
+                    <h1>Waktunya Membangun Sesuatu yang Hebat</h1>
+                    <p>Saya siap untuk mendengarkan ide Anda dan mengubahnya menjadi pengalaman digital yang luar biasa. Mari kita mulai percakapan.</p>
+                    <div class="availability-status">
+                        <span class="status-dot"></span>
+                        <p id="availability">Tersedia untuk proyek baru</p>
+                    </div>
+                    <a href="#contact-form" class="cta-button">Mulai Proyek Anda</a>
+                </div>
+            </section>
+
+            <div class="content-wrapper">
+                <!-- PROCESS SECTION -->
+                <section id="process" class="process-section fade-up">
+                    <h2>Proses Kolaborasi Saya</h2>
+                    <p>Transparansi dan komunikasi adalah kunci. Inilah bagaimana kita akan mewujudkan visi Anda bersama.</p>
+                    <div id="process-grid" class="process-grid">
+                        <!-- Konten akan diisi oleh JavaScript -->
+                    </div>
+                </section>
+
+                <!-- MAIN CONTACT GRID -->
+                <div id="contact-form" class="contact-grid">
+                    <!-- FORM SECTION -->
+                    <section class="contact-form-section fade-left">
+                        <!-- GANTI 'action' dengan URL dari layanan form seperti Formspree -->
+                        <form id="contact-form-element" class="contact-form-wrapper" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Nama Lengkap *</label>
+                                    <input type="text" id="name" name="name" required placeholder="Nama Anda">
+                                    <span class="error-message" id="name-error"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" required placeholder="emailAnda@gmail.com">
+                                    <span class="error-message" id="email-error"></span>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Nomor Telepon</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="+62 812-3456-7890">
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Subjek</label>
+                                    <input type="text" id="subject" name="subject" placeholder="Diskusi Proyek Web">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="budget">Rentang Anggaran</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Pilih rentang anggaran</option>
+                                    <option value="< 10 Juta">&lt; 10 Juta IDR</option>
+                                    <option value="10 - 25 Juta">10 - 25 Juta IDR</option>
+                                    <option value="25 - 50 Juta">25 - 50 Juta IDR</option>
+                                    <option value="> 50 Juta">&gt; 50 Juta IDR</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Pesan Anda *</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Ceritakan lebih detail tentang ide Anda..."></textarea>
+                                <div class="char-count"><span id="message-length">0</span> / 500</div>
+                                <span class="error-message" id="message-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="attachment">Lampirkan File (Opsional)</label>
+                                <input type="file" id="attachment" name="attachment">
+                                <span class="file-name" id="file-name"></span>
+                            </div>
+                            <button type="submit" class="submit-btn" id="submit-btn">
+                                <span id="btn-text">Kirim Pesan <i class="fas fa-paper-plane"></i></span>
+                                <div id="btn-spinner" class="btn-spinner" style="display: none;"></div>
+                            </button>
+                        </form>
+                        <div id="submission-message" class="submission-message" style="display: none;">
+                            <p id="submission-text"></p>
+                        </div>
+                    </section>
+
+                    <!-- INFO SECTION -->
+                    <section class="contact-info-section fade-right">
+                        <div class="info-card">
+                            <h3>Informasi Kontak</h3>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <!-- GANTI dengan email Anda -->
+                                    <a href="mailto:Ghausil@gmail.com">Ghausil@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Telepon / WhatsApp</h4>
+                                    <!-- GANTI dengan nomor Anda -->
+                                    <a href="tel:+6281234567890">+62 812-3456-7890</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Lokasi</h4>
+                                    <p>probolinggo, Indonesia</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links-card">
+                            <h3>Temukan Saya</h3>
+                            <div class="social-links">
+                                <!-- GANTI '#' dengan link sosial media Anda -->
+                                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-dribbble"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- FAQ SECTION -->
+                <section id="faq" class="faq-section fade-up">
+                    <h2>Pertanyaan yang Sering Diajukan (FAQ)</h2>
+                    <div id="faq-list" class="faq-list">
+                        <!-- Konten akan diisi oleh JavaScript -->
+                    </div>
+                </section>
+
+                <!-- CLIENT LOGOS / SOCIAL PROOF -->
+                <section class="social-proof-section fade-up">
+                    <h2>Senang Bekerja Sama Dengan</h2>
+                    <div id="logos-grid" class="logos-grid">
+                        <!-- Konten akan diisi oleh JavaScript -->
+                    </div>
+                </section>
+
+                <!-- MAP SECTION -->
+                <section class="map-section fade-up">
+                    <h2>Temukan Saya di Sini</h2>
+                    <div class="map-wrapper">
+                        <!-- GANTI URL peta dengan lokasi Anda -->
+                        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=106.8220%2C-6.2297%2C106.8420%2C-6.2097&layer=mapnik&marker=-6.2197%2C106.8320" frameborder="0" allowfullscreen></iframe>
+                        <div class="map-overlay">
+                            <h3>Berkunjung?</h3>
+                            <p>Jadwalkan pertemuan di kantor saya untuk diskusi lebih lanjut. Kopi sudah disiapkan!</p>
+                            <!-- GANTI email di href -->
+                            <a href="mailto:Ghausil@gmail.com?subject=Request Meeting" class="cta-button">Jadwalkan Pertemuan</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- FINAL CTA SECTION -->
+                <section class="final-cta-section fade-up">
+                    <div class="final-cta-content">
+                        <h2>Siap Untuk Memulai Proyek Anda?</h2>
+                        <p>Jangan ragu untuk menghubungi saya. Setiap proyek besar dimulai dari percakapan kecil.</p>
+                        <a href="#contact-form" class="cta-button large">Hubungi Saya Sekarang</a>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
