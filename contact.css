@@ -372,3 +372,19 @@ body.contact-page-active {
     .process-grid { grid-template-columns: 1fr; }
     .logos-grid { grid-template-columns: repeat(2, 1fr); }
 }
+/* --- Link Kembali ke Beranda --- */
+.home-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #b8b8d1;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.home-link:hover {
+    color: #00d4ff;
+    transform: translateX(-5px);
+}
